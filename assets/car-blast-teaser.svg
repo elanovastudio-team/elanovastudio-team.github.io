@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141126"/>
+      <stop offset="50%" stop-color="#0e101f"/>
+      <stop offset="100%" stop-color="#080911"/>
+    </linearGradient>
+
+    <!-- Grid Line Pattern -->
+    <pattern id="cb-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(139, 92, 246, 0.08)" stroke-width="1"/>
+    </pattern>
+
+    <linearGradient id="cb-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <linearGradient id="car-neon-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="car-neon-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="car-neon-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="600" height="340" rx="16" fill="url(#cb-bg)"/>
+  <rect width="600" height="340" rx="16" fill="url(#cb-grid)"/>
+
+  <!-- Subtle Radial Glow behind puzzle matrix -->
+  <ellipse cx="300" cy="170" rx="220" ry="110" fill="url(#cb-glow)"/>
+
+  <!-- Perspective Grid Board / Road Intersection Area -->
+  <g transform="translate(150, 40)">
+    <!-- Isometric Grid Surface -->
+    <path d="M 150 20 L 290 95 L 150 170 L 10 95 Z" fill="#12172b" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5"/>
+
+    <!-- Grid subdivision lines -->
+    <path d="M 80 57.5 L 220 132.5 M 10 95 L 150 170 M 220 57.5 L 80 132.5" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
+
+    <!-- Isometric Puzzle Blocks / Vehicles -->
+    <!-- Block 1: Cyan / Blue Vehicle unit -->
+    <g transform="translate(110, 50)">
+      <!-- Top -->
+      <path d="M 40 0 L 75 18 L 35 38 L 0 20 Z" fill="url(#car-neon-1)"/>
+      <!-- Left side -->
+      <path d="M 0 20 L 35 38 L 35 56 L 0 38 Z" fill="#1d4ed8"/>
+      <!-- Right side -->
+      <path d="M 35 38 L 75 18 L 75 36 L 35 56 Z" fill="#1e40af"/>
+      <!-- Vehicle Headlight Beams -->
+      <circle cx="20" cy="27" r="2.5" fill="#ffffff"/>
+      <circle cx="48" cy="13" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <!-- Block 2: Violet Vehicle Block (Cleared Blast) -->
+    <g transform="translate(160, 85)">
+      <!-- Top -->
+      <path d="M 40 0 L 75 18 L 35 38 L 0 20 Z" fill="url(#car-neon-2)"/>
+      <path d="M 0 20 L 35 38 L 35 56 L 0 38 Z" fill="#6d28d9"/>
+      <path d="M 35 38 L 75 18 L 75 36 L 35 56 Z" fill="#5b21b6"/>
+      <circle cx="20" cy="27" r="2.5" fill="#f5d0fe"/>
+      <circle cx="48" cy="13" r="2.5" fill="#f5d0fe"/>
+    </g>
+
+    <!-- Block 3: Amber Booster Block -->
+    <g transform="translate(50, 75)">
+      <!-- Top -->
+      <path d="M 30 0 L 60 15 L 30 30 L 0 15 Z" fill="url(#car-neon-amber)"/>
+      <path d="M 0 15 L 30 30 L 30 45 L 0 30 Z" fill="#d97706"/>
+      <path d="M 30 30 L 60 15 L 60 30 L 30 45 Z" fill="#b45309"/>
+    </g>
+
+    <!-- Blast Effect Particle Stars -->
+    <g stroke="none">
+      <circle cx="215" cy="85" r="3" fill="#f43f5e"/>
+      <circle cx="235" cy="65" r="2" fill="#fbbf24"/>
+      <circle cx="185" cy="130" r="2.5" fill="#38bdf8"/>
+      <circle cx="260" cy="110" r="1.5" fill="#c084fc"/>
+      <!-- Sparkle cross -->
+      <path d="M 240 75 Q 240 85 245 85 Q 240 85 240 95 Q 240 85 235 85 Q 240 85 240 75 Z" fill="#ffffff"/>
+      <path d="M 130 45 Q 130 52 134 52 Q 130 52 130 59 Q 130 52 126 52 Q 130 52 130 45 Z" fill="#38bdf8"/>
+    </g>
+  </g>
+
+  <!-- Technical Overlay HUD Elements -->
+  <g transform="translate(24, 24)">
+    <rect width="110" height="24" rx="12" fill="rgba(139, 92, 246, 0.15)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+    <circle cx="12" cy="12" r="4" fill="#a855f7"/>
+    <text x="24" y="15.5" font-family="'Plus Jakarta Sans', monospace, sans-serif" font-size="10" font-weight="700" fill="#c084fc" letter-spacing="0.08em">GAMEPLAY LAB</text>
+  </g>
+
+  <!-- Concept Art Tag at Bottom -->
+  <g transform="translate(24, 290)">
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#94a3b8">
+      PROJECT: <tspan fill="#f1f5f9">CAR BLAST</tspan>
+    </text>
+    <text y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">
+      Arcade Block Clearing &amp; Tactical Vehicle Grid Mechanics
+    </text>
+  </g>
+
+  <!-- Grid Blueprint Coordinates Watermark -->
+  <text x="576" y="310" text-anchor="end" font-family="monospace" font-size="10" fill="#475569" letter-spacing="0.1em">
+    SEC://CB-PROTO-2026
+  </text>
+</svg>
+

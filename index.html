@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elanova Studio — Independent Mobile Application &amp; Game Development Studio</title>
+  <meta name="description" content="Elanova Studio is an independent development studio focused on building useful mobile applications and engaging gaming experiences.">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elanovastudio-team.github.io/">
+  <meta property="og:title" content="Elanova Studio — Independent Mobile Application &amp; Game Development Studio">
+  <meta property="og:description" content="We combine creativity, technology, and thoughtful design to build impactful digital experiences.">
+  <meta property="og:image" content="https://elanovastudio-team.github.io/assets/logo.svg">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elanova Studio — Independent Apps &amp; Games">
+  <meta name="twitter:description" content="Independent studio creating practical mobile applications and engaging gaming experiences.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Editorial Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link" aria-label="Elanova Studio Home">
+        <img src="assets/logo.svg" alt="Elanova Studio Logo" class="brand-logo" width="190" height="42">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#apps" class="nav-link">Our Apps</a></li>
+          <li><a href="#games" class="nav-link">Our Games</a></li>
+          <li><a href="#approach" class="nav-link">Our Approach</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Header CTA -->
+      <div class="header-action-group">
+        <a href="#contact" class="btn btn-header">
+          <span>Get in Touch</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Navigation Hamburger Toggle -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#apps" class="mobile-nav-link">Our Apps</a></li>
+          <li><a href="#games" class="mobile-nav-link">Our Games</a></li>
+          <li><a href="#approach" class="mobile-nav-link">Our Approach</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="#contact" class="btn btn-primary btn-block">Let's Connect</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Structure -->
+  <main id="main-content">
+
+    <!-- Section B: Hero Section (Two-Column Editorial Showcase) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Copy & Value Proposition -->
+        <div class="hero-text-col">
+          <div class="hero-badge-wrap">
+            <span class="hero-eyebrow">
+              <span class="pulse-beacon"></span>
+              INDEPENDENT DEVELOPMENT STUDIO
+            </span>
+          </div>
+
+          <h1 class="hero-headline">
+            We Build Digital Experiences That Make an Impact.
+          </h1>
+
+          <p class="hero-description">
+            Elanova Studio is an independent development studio focused on building useful mobile applications and engaging gaming experiences. We combine creativity, technology, and thoughtful design to transform ideas into digital products.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#apps" class="btn btn-primary">
+              <span>Explore Our Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Meet the Studio</span>
+            </a>
+          </div>
+
+          <!-- Studio Trust Markers -->
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <span class="trust-val">Android</span>
+              <span class="trust-label">Primary Mobile Ecosystem</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-val">Indie Lab</span>
+              <span class="trust-label">100% Autonomous Studio</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-val">Multi-Genre</span>
+              <span class="trust-label">Utility &amp; Game Mechanics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Impressive Product Ecosystem Showcase -->
+        <div class="hero-visual-col">
+          <div class="hero-composition">
+            
+            <!-- Main Phone Showcase Frame (Prime Focus Timer Live UI) -->
+            <div class="device-mockup-main">
+              <div class="device-speaker-notch"></div>
+              <div class="device-screen">
+                <img src="assets/prime-focus-screenshots/screenshot-1.png" alt="Prime Focus Timer Application Interface" class="device-screen-img" width="320" height="690">
+              </div>
+              <div class="device-glare"></div>
+            </div>
+
+            <!-- Floating Card 1: Prime Focus Android App Badge -->
+            <div class="floating-stat-card card-app-status">
+              <div class="stat-icon-wrap">
+                <img src="assets/prime-focus-icon.png" alt="Prime Focus App Icon" class="stat-app-icon" width="46" height="46">
+              </div>
+              <div class="stat-body">
+                <div class="stat-pill">Published &bull; v1.1.7</div>
+                <h4 class="stat-title">Prime Focus Timer</h4>
+                <p class="stat-sub">Live on Google Play</p>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: Upcoming Games Lab Card -->
+            <div class="floating-stat-card card-game-status">
+              <div class="game-teaser-thumb">
+                <span class="badge-dev-mini">In Development</span>
+                <span class="game-teaser-title">Car Blast &bull; IT-Empire</span>
+              </div>
+              <div class="stat-body">
+                <span class="stat-sub">Next-Gen Arcade &amp; Simulation</span>
+              </div>
+            </div>
+
+            <!-- Subtle Decorative Geometry (Non-AI, Crisp Vector Accents) -->
+            <div class="hero-ambient-glow"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section C: About Elanova Studio -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="eyebrow-tag">ABOUT ELANOVA STUDIO</div>
+          <h2 class="editorial-title">Small Studio. Big Ideas.</h2>
+          <p class="editorial-lead">
+            Elanova Studio is an independent development initiative creating mobile applications and games. Our focus is on building meaningful digital experiences through practical engineering, creative thinking, and continuous improvement.
+          </p>
+        </div>
+
+        <!-- Three Editorial Pillars -->
+        <div class="pillars-editorial-grid">
+          
+          <!-- Pillar 01 -->
+          <article class="pillar-card">
+            <div class="pillar-num-header">
+              <span class="pillar-number">01</span>
+              <span class="pillar-indicator"></span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-heading">Application Development</h3>
+              <p class="pillar-text">
+                Creating useful Android applications with thoughtful user experiences. We solve real-world productivity and focus challenges through purposeful architecture and clean interfaces.
+              </p>
+              <ul class="pillar-highlights">
+                <li>Offline-First Security &amp; Local Storage</li>
+                <li>Zero-Distraction Interaction Patterns</li>
+                <li>Reliable Android Architecture &amp; Lifecycle</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 02 -->
+          <article class="pillar-card">
+            <div class="pillar-num-header">
+              <span class="pillar-number">02</span>
+              <span class="pillar-indicator"></span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-heading">Game Development</h3>
+              <p class="pillar-text">
+                Developing interactive mobile games with engaging mechanics. From arcade block-clearing puzzles to complex business simulations, we craft loops that reward player decision-making.
+              </p>
+              <ul class="pillar-highlights">
+                <li>Tactile Controls &amp; Dynamic Feedback</li>
+                <li>Distinct Gameplay Loops &amp; Progression</li>
+                <li>Lightweight &amp; Battery-Friendly Performance</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 03 -->
+          <article class="pillar-card">
+            <div class="pillar-num-header">
+              <span class="pillar-number">03</span>
+              <span class="pillar-indicator"></span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-heading">Creative Engineering</h3>
+              <p class="pillar-text">
+                Combining design, technology, and experimentation to bring ideas to life. We explore modern frameworks, optimize algorithms, and continually refine our development pipeline.
+              </p>
+              <ul class="pillar-highlights">
+                <li>Continuous Iteration &amp; Testing</li>
+                <li>Modern Design Systems &amp; Motion Design</li>
+                <li>Scalable Codebases for Long-Term Support</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section D: Our Apps – Published Applications (Prime Focus Timer Showcase) -->
+    <section class="apps-section" id="apps">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="eyebrow-tag">PUBLISHED APPLICATIONS</div>
+          <h2 class="editorial-title">Engineered for Daily Focus &amp; Routine.</h2>
+          <p class="editorial-lead">
+            Our officially published applications are built with high reliability, privacy-conscious storage, and dedicated user experience design.
+          </p>
+        </div>
+
+        <!-- Featured Application Master Showcase -->
+        <div class="featured-app-master">
+          <div class="app-hero-split">
+            
+            <!-- Left Info & Specs -->
+            <div class="app-primary-info">
+              <div class="app-brand-lockup">
+                <img src="assets/prime-focus-icon.png" alt="Prime Focus Timer Official App Icon" class="app-official-icon" width="96" height="96">
+                <div class="app-brand-titles">
+                  <span class="app-status-flag">
+                    <span class="live-dot"></span>
+                    AVAILABLE ON GOOGLE PLAY
+                  </span>
+                  <h3 class="app-main-title">Prime Focus Timer</h3>
+                  <div class="app-meta-pills">
+                    <span class="meta-pill">Android Platform</span>
+                    <span class="meta-pill">Version 1.1.7</span>
+                    <span class="meta-pill">Productivity</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="app-full-description">
+                Prime Focus Timer is a productivity application designed to help users manage focus sessions, organize activities, build consistent routines, and make better use of their time.
+              </p>
+
+              <!-- 6 Core Highlighted Features -->
+              <div class="app-features-grid">
+                <div class="feature-bullet">
+                  <div class="feature-bullet-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <div class="feature-bullet-content">
+                    <h4>Focus Sessions &amp; Breaks</h4>
+                    <p>Structured intervals with customizable work-to-rest cadences.</p>
+                  </div>
+                </div>
+
+                <div class="feature-bullet">
+                  <div class="feature-bullet-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                  </div>
+                  <div class="feature-bullet-content">
+                    <h4>Collections &amp; Custom Timers</h4>
+                    <p>Organize routines into tailored tags, categories, and presets.</p>
+                  </div>
+                </div>
+
+                <div class="feature-bullet">
+                  <div class="feature-bullet-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+                  </div>
+                  <div class="feature-bullet-content">
+                    <h4>Time Laps &amp; Activity Routines</h4>
+                    <p>Track granular session segments with seamless state retention.</p>
+                  </div>
+                </div>
+
+                <div class="feature-bullet">
+                  <div class="feature-bullet-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                  </div>
+                  <div class="feature-bullet-content">
+                    <h4>Scheduling &amp; Notifications</h4>
+                    <p>Non-intrusive sound cues and local notification alerts.</p>
+                  </div>
+                </div>
+
+                <div class="feature-bullet">
+                  <div class="feature-bullet-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  </div>
+                  <div class="feature-bullet-content">
+                    <h4>Productivity Analytics</h4>
+                    <p>Visual weekly progress logs, completion rates, and streaks.</p>
+                  </div>
+                </div>
+
+                <div class="feature-bullet">
+                  <div class="feature-bullet-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <div class="feature-bullet-content">
+                    <h4>Offline-First Functionality</h4>
+                    <p>100% device-stored data with zero server tracking or ads injection.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="app-cta-row">
+                <a href="https://play.google.com/store/apps/details?id=com.etla.primefocus" class="btn btn-store-light" target="_blank" rel="noopener noreferrer">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.609 1.814L13.793 12 3.61 22.186c-.368-.423-.61-.989-.61-1.636V3.45c0-.647.242-1.213.609-1.636zm11.314 11.314l2.13-2.13-11.89-6.79 9.76 8.92zm2.13-2.128l2.955 1.688c.84.48.84 1.264 0 1.744l-2.955 1.688-2.316-2.316 2.316-2.804zm-4.446 2.128l-9.76 8.92 11.89-6.79-2.13-2.13z"/>
+                  </svg>
+                  <div class="btn-store-text">
+                    <span class="store-sub">GET IT ON</span>
+                    <span class="store-headline">Google Play</span>
+                  </div>
+                </a>
+
+                <a href="https://elanovastudio-team.github.io/prime-focus-legal/" class="btn btn-legal-light" target="_blank" rel="noopener noreferrer">
+                  <span>Privacy Policy &amp; Terms</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Premium Interactive Overlapping Mobile Showcase -->
+            <div class="app-visual-showcase">
+              <div class="mockup-stack-wrapper">
+                
+                <div class="mockup-device mockup-back">
+                  <img src="assets/prime-focus-screenshots/screenshot-2.png" alt="Prime Focus Sessions Screen" class="mockup-img" width="280" height="580" loading="lazy">
+                </div>
+
+                <div class="mockup-device mockup-front">
+                  <img src="assets/prime-focus-screenshots/screenshot-3.png" alt="Prime Focus Timer Analytics Screen" class="mockup-img" width="300" height="620" loading="lazy">
+                  <div class="mockup-badge">Live v1.1.7</div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom: Actual Application Screenshot Carousel Gallery -->
+          <div class="app-gallery-block">
+            <div class="gallery-header">
+              <h4 class="gallery-title">Application Screenshots &amp; Interface Walkthrough</h4>
+              <div class="gallery-controls">
+                <button type="button" class="gallery-arrow" id="gallery-prev" aria-label="Previous screenshot">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button type="button" class="gallery-arrow" id="gallery-next" aria-label="Next screenshot">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery-track-container" id="gallery-track">
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-1.png" alt="Focus Timer Dial View" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Session Timer &amp; Routine Cadence</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-2.png" alt="Custom Collections &amp; Activities" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Activity Collections &amp; Presets</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-3.png" alt="Productivity Analytics" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Performance &amp; Time Lap Analysis</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-4.png" alt="Time Lapse &amp; Detailed Tracking" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Granular Routine Records</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-5.png" alt="Scheduling Calendar" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Daily Routine Scheduler</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-6.png" alt="Settings &amp; Offline Privacy" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Privacy-First Preferences</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-7.png" alt="Sound &amp; Notification Profiles" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Acoustic Feedback Modes</span>
+              </div>
+              <div class="gallery-slide">
+                <img src="assets/prime-focus-screenshots/screenshot-8.png" alt="Premium Features &amp; Billing" class="gallery-img" loading="lazy">
+                <span class="slide-caption">Google Play Billing Integration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section E: Upcoming Games (High-End Game Studio Presentation) -->
+    <section class="games-section" id="games">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="eyebrow-tag">GAMES IN DEVELOPMENT</div>
+          <h2 class="editorial-title">Games We're Bringing to Life.</h2>
+          <p class="editorial-lead">
+            Exploring new ideas, designing engaging mechanics, and building interactive experiences.
+          </p>
+        </div>
+
+        <!-- Two Visually Distinct Project Showcases -->
+        <div class="games-showcase-grid">
+          
+          <!-- GAME 01: CAR BLAST -->
+          <article class="game-showcase-card game-card-arcade">
+            <div class="game-media-viewport">
+              <img src="assets/car-blast-artwork/car-blast-banner.svg" alt="Car Blast Official Artwork &amp; Vehicle Mechanics Concept" class="game-artwork-large" width="1200" height="675" loading="lazy">
+              <div class="game-badge-overlay">
+                <span class="badge-status-dev">
+                  <span class="status-pulse-amber"></span>
+                  IN DEVELOPMENT
+                </span>
+                <span class="badge-genre">Mobile Arcade / Puzzle</span>
+              </div>
+            </div>
+
+            <div class="game-info-pane">
+              <div class="game-meta-header">
+                <h3 class="game-headline">Car Blast</h3>
+                <span class="game-platform-tag">Android Mobile Game</span>
+              </div>
+
+              <p class="game-narrative">
+                Car Blast is an upcoming mobile game featuring vehicle-based gameplay, strategic placement, and satisfying block-clearing mechanics.
+              </p>
+
+              <div class="game-features-snippet">
+                <span class="snippet-tag">Vehicle Placement Strategy</span>
+                <span class="snippet-tag">Tactile Clearing Combos</span>
+                <span class="snippet-tag">Fast Arcade Sessions</span>
+              </div>
+
+              <div class="game-card-footer">
+                <button type="button" class="btn btn-game-explore" data-game-modal="car-blast">
+                  <span>Explore Project</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <span class="game-stage-info">Prototype &amp; Physics Tuning Stage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- GAME 02: IT-EMPIRE -->
+          <article class="game-showcase-card game-card-sim">
+            <div class="game-media-viewport">
+              <img src="assets/it-empire-artwork/it-empire-banner.svg" alt="IT-Empire Management Simulation Datacenter Concept" class="game-artwork-large" width="1200" height="675" loading="lazy">
+              <div class="game-badge-overlay">
+                <span class="badge-status-dev">
+                  <span class="status-pulse-blue"></span>
+                  IN DEVELOPMENT
+                </span>
+                <span class="badge-genre">Technology / Management Simulation</span>
+              </div>
+            </div>
+
+            <div class="game-info-pane">
+              <div class="game-meta-header">
+                <h3 class="game-headline">IT-Empire</h3>
+                <span class="game-platform-tag">Mobile Simulation Title</span>
+              </div>
+
+              <p class="game-narrative">
+                IT-Empire is an upcoming management simulation project focused on building, expanding, and managing a technology-driven empire.
+              </p>
+
+              <div class="game-features-snippet">
+                <span class="snippet-tag">Datacenter Scaling</span>
+                <span class="snippet-tag">Tech Economy Loops</span>
+                <span class="snippet-tag">Infrastructure Tycoon</span>
+              </div>
+
+              <div class="game-card-footer">
+                <button type="button" class="btn btn-game-explore" data-game-modal="it-empire">
+                  <span>Explore Project</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <span class="game-stage-info">System Architecture &amp; Economy Balance</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section F: Our Approach (Horizontal Development Timeline) -->
+    <section class="approach-section" id="approach">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="eyebrow-tag">OUR DEVELOPMENT PROCESS</div>
+          <h2 class="editorial-title">From Idea to Experience.</h2>
+          <p class="editorial-lead">
+            Every digital product moves through a structured, iterative lifecycle designed to ensure technical stability and high player satisfaction.
+          </p>
+        </div>
+
+        <!-- Horizontal Timeline Track -->
+        <div class="timeline-container">
+          <div class="timeline-track-line"></div>
+          
+          <div class="timeline-stages-grid">
+            
+            <!-- Stage 01 -->
+            <div class="timeline-node">
+              <div class="node-marker">
+                <span class="node-circle">01</span>
+              </div>
+              <div class="node-card">
+                <span class="node-phase">PHASE 01</span>
+                <h3 class="node-title">Concept</h3>
+                <p class="node-desc">Exploring ideas and defining the product direction.</p>
+              </div>
+            </div>
+
+            <!-- Stage 02 -->
+            <div class="timeline-node">
+              <div class="node-marker">
+                <span class="node-circle">02</span>
+              </div>
+              <div class="node-card">
+                <span class="node-phase">PHASE 02</span>
+                <h3 class="node-title">Design</h3>
+                <p class="node-desc">Planning user experiences, mechanics, and visual identity.</p>
+              </div>
+            </div>
+
+            <!-- Stage 03 -->
+            <div class="timeline-node">
+              <div class="node-marker">
+                <span class="node-circle">03</span>
+              </div>
+              <div class="node-card">
+                <span class="node-phase">PHASE 03</span>
+                <h3 class="node-title">Development</h3>
+                <p class="node-desc">Building, integrating, and implementing features.</p>
+              </div>
+            </div>
+
+            <!-- Stage 04 -->
+            <div class="timeline-node">
+              <div class="node-marker">
+                <span class="node-circle">04</span>
+              </div>
+              <div class="node-card">
+                <span class="node-phase">PHASE 04</span>
+                <h3 class="node-title">Testing</h3>
+                <p class="node-desc">Testing functionality, performance, and usability.</p>
+              </div>
+            </div>
+
+            <!-- Stage 05 -->
+            <div class="timeline-node">
+              <div class="node-marker">
+                <span class="node-circle">05</span>
+              </div>
+              <div class="node-card">
+                <span class="node-phase">PHASE 05</span>
+                <h3 class="node-title">Release</h3>
+                <p class="node-desc">Preparing products for distribution and continuous improvement.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section G: Development Philosophy -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="eyebrow-tag">STUDIO PRINCIPLES</div>
+          <h2 class="editorial-title">Thoughtful Development. Meaningful Experiences.</h2>
+          <p class="editorial-lead">
+            The values that drive our engineering decisions, product roadmaps, and studio standards.
+          </p>
+        </div>
+
+        <div class="philosophy-trio-grid">
+          
+          <div class="philosophy-trio-card">
+            <div class="philosophy-tag">PRINCIPLE 01</div>
+            <h3 class="philosophy-headline">USER-FIRST DESIGN</h3>
+            <p class="philosophy-body">
+              Building applications and games with usability and player experience in mind. We prioritize clear feedback, frictionless navigation, and respects for our users' time and attention.
+            </p>
+          </div>
+
+          <div class="philosophy-trio-card">
+            <div class="philosophy-tag">PRINCIPLE 02</div>
+            <h3 class="philosophy-headline">CONTINUOUS IMPROVEMENT</h3>
+            <p class="philosophy-body">
+              Learning, testing, refining, and improving every product. Software is a living craft; we listen to telemetry, player feedback, and technological evolutions to deliver sustained updates.
+            </p>
+          </div>
+
+          <div class="philosophy-trio-card">
+            <div class="philosophy-tag">PRINCIPLE 03</div>
+            <h3 class="philosophy-headline">CREATIVE TECHNOLOGY</h3>
+            <p class="philosophy-body">
+              Exploring new ideas and technologies to build better digital experiences. Whether implementing efficient state machines or physics simulations, we embrace curiosity with engineering discipline.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section H: Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-master">
+          <div class="contact-inner-grid">
+            
+            <div class="contact-text-side">
+              <div class="eyebrow-tag">START A CONVERSATION</div>
+              <h2 class="contact-headline">Let's Build Something Interesting.</h2>
+              <p class="contact-lead">
+                For business inquiries, collaborations, feedback, or project discussions, get in touch with Elanova Studio.
+              </p>
+              
+              <div class="contact-methods">
+                
+                <!-- Email Channel -->
+                <div class="contact-method-item">
+                  <div class="method-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Direct Studio Email</span>
+                    <a href="mailto:elanovastudio.team@gmail.com" class="method-val" id="studio-email">elanovastudio.team@gmail.com</a>
+                  </div>
+                  <button type="button" class="btn-copy-email" id="copy-email-action" aria-label="Copy studio email address" title="Copy to clipboard">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <span class="copy-label">Copy</span>
+                  </button>
+                </div>
+
+                <!-- GitHub Channel -->
+                <div class="contact-method-item">
+                  <div class="method-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Organization Repositories</span>
+                    <a href="https://github.com/elanovastudio-team" class="method-val" target="_blank" rel="noopener noreferrer">github.com/elanovastudio-team</a>
+                  </div>
+                  <a href="https://github.com/elanovastudio-team" class="btn-external-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Elanova Studio GitHub Organization">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right Visual / Quick Form Prompt -->
+            <div class="contact-action-side">
+              <div class="contact-cta-box">
+                <h3 class="cta-box-title">Have a specific proposal or feedback?</h3>
+                <p class="cta-box-text">Send an email directly from your preferred client or copy our address to start the discussion.</p>
+                <a href="mailto:elanovastudio.team@gmail.com?subject=Elanova%20Studio%20Inquiry" class="btn btn-primary btn-block">
+                  <span>Send Studio Inquiry</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <p class="cta-note">Average response turnaround within 24–48 business hours.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Section I: Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-primary-row">
+        <!-- Studio Brand Column -->
+        <div class="footer-col-brand">
+          <a href="#hero" class="footer-brand-link">
+            <img src="assets/logo.svg" alt="Elanova Studio" class="footer-logo-img" width="180" height="40">
+          </a>
+          <p class="footer-tagline">
+            ELANOVA STUDIO &bull; Independent Application &amp; Game Development Studio.
+          </p>
+          <p class="footer-mission">
+            We turn ideas into digital products through creativity, technology, and continuous improvement.
+          </p>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-col-links">
+          <h4 class="footer-col-heading">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#apps">Our Apps</a></li>
+            <li><a href="#games">Our Games</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Compliance Column -->
+        <div class="footer-col-links">
+          <h4 class="footer-col-heading">Legal &amp; Policies</h4>
+          <ul class="footer-nav-list">
+            <li>
+              <a href="https://elanovastudio-team.github.io/prime-focus-legal/" target="_blank" rel="noopener noreferrer" class="legal-policy-link">
+                <span>Prime Focus Privacy Policy</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/elanovastudio-team" target="_blank" rel="noopener noreferrer" class="legal-policy-link">
+                <span>GitHub Organization</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="app-ads.txt" target="_blank" rel="noopener noreferrer" class="legal-policy-link">
+                <span>Authorized Ads (app-ads.txt)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal-notice-bar">
+        <p class="copyright-text">&copy; 2026 Elanova Studio. All rights reserved.</p>
+        <p class="legal-disclaimer-text">
+          Important Notice: Prime Focus legal documentation applies exclusively to the Prime Focus Android application and does not represent terms or policies for upcoming game titles. Google Play and the Google Play logo are trademarks of Google LLC.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Project Details Modal for Upcoming Games -->
+  <div class="modal-overlay" id="game-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close" aria-label="Close project modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-dev-badge" id="modal-badge">IN DEVELOPMENT</span>
+        <h3 class="modal-title" id="modal-title">Game Title</h3>
+        <span class="modal-category" id="modal-category">Category</span>
+      </div>
+
+      <div class="modal-media-frame">
+        <img src="" alt="Project Artwork" class="modal-img" id="modal-image">
+      </div>
+
+      <div class="modal-body">
+        <h4 class="modal-section-title">Project Overview</h4>
+        <p class="modal-desc" id="modal-description">Description</p>
+
+        <h4 class="modal-section-title">Development Status &amp; Mechanics</h4>
+        <div class="modal-mechanics" id="modal-mechanics">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-notice">Pre-release project &bull; Not yet published on public app stores.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to top button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

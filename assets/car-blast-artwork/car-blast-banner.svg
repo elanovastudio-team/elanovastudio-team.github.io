@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <!-- Background Gradient for Arcade Vibe (Crisp and Vibrant) -->
+    <linearGradient id="cb-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="40%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Sun / Arena Horizon Glow -->
+    <radialGradient id="cb-horizon" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#FB923C" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#312E81" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Car Shaders -->
+    <linearGradient id="car-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3366"/>
+      <stop offset="100%" stop-color="#CC0033"/>
+    </linearGradient>
+
+    <linearGradient id="car-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFCC00"/>
+      <stop offset="100%" stop-color="#FF9900"/>
+    </linearGradient>
+
+    <linearGradient id="car-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#0088FF"/>
+    </linearGradient>
+
+    <linearGradient id="car-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <!-- Floor Grid Pattern -->
+    <linearGradient id="grid-fade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Arcade Night Sky -->
+  <rect width="1200" height="675" fill="url(#cb-sky)"/>
+  <rect width="1200" height="675" fill="url(#cb-horizon)"/>
+
+  <!-- Perspective 3D Arcade Grid Road Surface -->
+  <g opacity="0.85">
+    <path d="M 0 675 L 420 330 L 780 330 L 1200 675 Z" fill="#090D1A"/>
+    <!-- Grid Perspective Lines -->
+    <line x1="600" y1="330" x2="600" y2="675" stroke="#38BDF8" stroke-width="3" opacity="0.6"/>
+    <line x1="550" y1="330" x2="420" y2="675" stroke="#38BDF8" stroke-width="2.5" opacity="0.5"/>
+    <line x1="650" y1="330" x2="780" y2="675" stroke="#38BDF8" stroke-width="2.5" opacity="0.5"/>
+    <line x1="500" y1="330" x2="220" y2="675" stroke="#38BDF8" stroke-width="2" opacity="0.4"/>
+    <line x1="700" y1="330" x2="980" y2="675" stroke="#38BDF8" stroke-width="2" opacity="0.4"/>
+    <line x1="450" y1="330" x2="20" y2="675" stroke="#38BDF8" stroke-width="1.8" opacity="0.3"/>
+    <line x1="750" y1="330" x2="1180" y2="675" stroke="#38BDF8" stroke-width="1.8" opacity="0.3"/>
+
+    <!-- Horizontal Distance Lines -->
+    <line x1="400" y1="360" x2="800" y2="360" stroke="#38BDF8" stroke-width="1.5" opacity="0.25"/>
+    <line x1="360" y1="400" x2="840" y2="400" stroke="#38BDF8" stroke-width="1.8" opacity="0.3"/>
+    <line x1="310" y1="450" x2="890" y2="450" stroke="#38BDF8" stroke-width="2" opacity="0.35"/>
+    <line x1="240" y1="520" x2="960" y2="520" stroke="#38BDF8" stroke-width="2.5" opacity="0.4"/>
+    <line x1="140" y1="610" x2="1060" y2="610" stroke="#38BDF8" stroke-width="3" opacity="0.5"/>
+  </g>
+
+  <!-- Arcade City Silhouette in Distance -->
+  <g fill="#111827" opacity="0.9">
+    <rect x="240" y="270" width="45" height="60"/>
+    <rect x="295" y="250" width="35" height="80"/>
+    <rect x="340" y="280" width="50" height="50"/>
+    <rect x="400" y="240" width="60" height="90"/>
+    <rect x="740" y="250" width="55" height="80"/>
+    <rect x="805" y="270" width="40" height="60"/>
+    <rect x="855" y="235" width="65" height="95"/>
+    <rect x="930" y="265" width="45" height="65"/>
+  </g>
+
+  <!-- Central Block Clearing Matrix Grid (Isometric Puzzle Elements) -->
+  <g transform="translate(600, 390)">
+    <!-- Active Grid Cells -->
+    <!-- Center Red Muscle Car Block -->
+    <g transform="translate(-80, 50)">
+      <!-- Shadow -->
+      <ellipse cx="80" cy="85" rx="100" ry="24" fill="#000000" opacity="0.6"/>
+      <!-- Body Top -->
+      <path d="M 0 35 L 75 0 L 160 38 L 85 75 Z" fill="url(#car-red)"/>
+      <!-- Left flank -->
+      <path d="M 0 35 L 85 75 L 85 105 L 0 65 Z" fill="#990022"/>
+      <!-- Right flank -->
+      <path d="M 85 75 L 160 38 L 160 68 L 85 105 Z" fill="#660017"/>
+      <!-- Windshield -->
+      <path d="M 40 32 L 80 14 L 125 35 L 85 54 Z" fill="#1E293B"/>
+      <!-- Headlights Glow -->
+      <circle cx="85" cy="85" r="5" fill="#FFFBEB"/>
+      <circle cx="145" cy="55" r="5" fill="#FFFBEB"/>
+      <!-- Speed Lines -->
+      <line x1="-30" y1="50" x2="-80" y2="40" stroke="#FF4D6D" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-20" y1="65" x2="-60" y2="60" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Left Yellow Taxi / Speedster Unit -->
+    <g transform="translate(-320, 20)">
+      <ellipse cx="60" cy="70" rx="75" ry="18" fill="#000000" opacity="0.5"/>
+      <path d="M 0 30 L 60 0 L 125 30 L 65 60 Z" fill="url(#car-yellow)"/>
+      <path d="M 0 30 L 65 60 L 65 85 L 0 55 Z" fill="#B45309"/>
+      <path d="M 65 60 L 125 30 L 125 55 L 65 85 Z" fill="#78350F"/>
+      <path d="M 30 26 L 62 10 L 98 26 L 65 42 Z" fill="#0F172A"/>
+      <!-- Taxi Roof Sign -->
+      <path d="M 52 14 L 72 14 L 68 20 L 48 20 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Right Cyan Truck / Transport Unit -->
+    <g transform="translate(180, 30)">
+      <ellipse cx="70" cy="75" rx="85" ry="20" fill="#000000" opacity="0.5"/>
+      <path d="M 0 35 L 70 0 L 140 35 L 70 70 Z" fill="url(#car-cyan)"/>
+      <path d="M 0 35 L 70 70 L 70 100 L 0 65 Z" fill="#0284C7"/>
+      <path d="M 70 70 L 140 35 L 140 65 L 70 100 Z" fill="#0369A1"/>
+      <path d="M 35 30 L 70 12 L 105 30 L 70 48 Z" fill="#082F49"/>
+    </g>
+
+    <!-- Background Violet Roadster -->
+    <g transform="translate(-60, -90)">
+      <ellipse cx="60" cy="60" rx="60" ry="15" fill="#000000" opacity="0.4"/>
+      <path d="M 0 25 L 55 0 L 110 25 L 55 50 Z" fill="url(#car-purple)"/>
+      <path d="M 0 25 L 55 50 L 55 70 L 0 45 Z" fill="#6B21A8"/>
+      <path d="M 55 50 L 110 25 L 110 45 L 55 70 Z" fill="#4C1D95"/>
+    </g>
+
+    <!-- Blast Sparkle Combo Particles -->
+    <g>
+      <circle cx="20" cy="10" r="6" fill="#FDE047"/>
+      <circle cx="-140" cy="40" r="4" fill="#38BDF8"/>
+      <circle cx="160" cy="-20" r="5" fill="#F43F5E"/>
+      <circle cx="70" cy="-60" r="4" fill="#A855F7"/>
+      <!-- Burst Stars -->
+      <polygon points="120,70 125,78 135,80 127,87 130,97 120,90 110,97 113,87 105,80 115,78" fill="#F59E0B"/>
+      <polygon points="-100,10 -96,16 -88,18 -94,23 -92,31 -100,26 -108,31 -106,23 -112,18 -104,16" fill="#38BDF8"/>
+    </g>
+  </g>
+
+  <!-- Top HUD Badges & Title -->
+  <g transform="translate(60, 55)">
+    <!-- Studio Tag -->
+    <rect width="180" height="32" rx="16" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.5"/>
+    <circle cx="18" cy="16" r="5" fill="#F59E0B"/>
+    <text x="32" y="21" font-family="'Plus Jakarta Sans', monospace, sans-serif" font-size="12" font-weight="700" fill="#F8FAFC" letter-spacing="0.1em">ARCADE // PUZZLE</text>
+
+    <!-- Big Bold Game Wordmark -->
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="56" font-weight="900" fill="#FFFFFF" letter-spacing="-0.03em">
+      CAR <tspan fill="#F59E0B">BLAST</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text x="0" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">
+      Vehicle Strategy &amp; Satisfying Block-Clearing Mechanics
+    </text>
+  </g>
+
+  <!-- Right Status Badge (IN DEVELOPMENT) -->
+  <g transform="translate(970, 55)">
+    <rect width="170" height="38" rx="19" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="22" cy="19" r="6" fill="#F59E0B"/>
+    <text x="38" y="24" font-family="'Plus Jakarta Sans', monospace, sans-serif" font-size="12" font-weight="800" fill="#FBBF24" letter-spacing="0.08em">IN DEVELOPMENT</text>
+  </g>
+
+  <!-- Bottom Left Spec Card -->
+  <g transform="translate(60, 580)">
+    <rect width="320" height="45" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.2"/>
+    <text x="18" y="28" font-family="'Plus Jakarta Sans', monospace, sans-serif" font-size="12" font-weight="600" fill="#94A3B8">
+      PLATFORM: <tspan fill="#38BDF8">ANDROID MOBILE</tspan> &bull; ENGINE LABS
+    </text>
+  </g>
+</svg>
+
